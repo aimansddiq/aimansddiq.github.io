@@ -44,7 +44,7 @@
 
     function addx() {
       var x = parseFloat(prompt("X value", 0));
-      if (x === "")
+      if (isNaN(x))
         x = 0;
       document.getElementById("x-diagram").innerHTML += "<p><svg height='100' width='200'><text x='0' y='50' >" + x + "</text><circle cx='50%' cy='50%' r='40' stroke='black' stroke-width='3' fill='white' /><text x='50%'' y='50%'' text-anchor='middle' stroke-width='2px' dy='.3em'>X</text></svg></p>"
       var xn = { value: x, vij: [] };
@@ -57,7 +57,7 @@
     }
     function addy() {
       var y = parseFloat(prompt("t value"));
-      if (y === "")
+      if (isNaN(y))
         y = 0;
       document.getElementById("y-diagram").innerHTML += "<p><svg height='100' width='200'><text x='95%' y='50' >" + y + "</text><circle cx='50%' cy='50%' r='40' stroke='black' stroke-width='3' fill='white' /><text x='50%'' y='50%'' text-anchor='middle' stroke-width='2px' dy='.3em'>Y</text></svg></p>"
       var yn = {value: y, wjk: []};
@@ -261,10 +261,11 @@
                 </p>
               </div>
               <div class="social-links">
-                <a href="https://twitter.com/AimanS_" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.twitch.tv/qidds" class="instagram"><i class="fa fa-twitch"></i></a>
-                <a href="https://www.facebook.com/aimansiddiq/" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/aimansiddiq/" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/AimanS_" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.twitch.tv/qidds" target="_blank" class="instagram"><i class="fa fa-twitch"></i></a>
+                <a href="https://www.facebook.com/aimansiddiq/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/aimansiddiq/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/aimansddiq" target="_blank" class="instagram"><i class="fa fa-github"></i></a>
               </div>
             </div>
           </div>
