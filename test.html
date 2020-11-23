@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        class nodes {
+            nodes(value, ij) {
+                this.value = value;
+                this.ij = ij;
+                this.bias = bias;
+            }
+        }
+
+        const xnodes = new array();
+        const znodes = new array();
+        const ynodes = new array();
+
+        function addx() {
+            var x = prompt("X value");
+            if(x==="")
+                x = 0;
+            document.getElementById("x-diagram").innerHTML += "<p><svg height='100' width='200'><text x='0' y='50' >"+x+"</text><circle cx='50%' cy='50%' r='40' stroke='black' stroke-width='3' fill='white' /><text x='50%'' y='50%'' text-anchor='middle' stroke-width='2px' dy='.3em'>X</text></svg></p>"
+            
+        }
+        function addz() {
+            //var z = prompt("Z value");
+            document.getElementById("z-diagram").innerHTML += "<p><svg height='100' width='200'><circle cx='50%' cy='50%' r='40' stroke='black' stroke-width='3' fill='white' /><text x='50%'' y='50%'' text-anchor='middle' stroke-width='2px' dy='.3em'>Z</text></svg></p>"
+        }
+        function addy() {
+            var y = prompt("Y value");
+            if(y==="")
+                y = 0;
+            document.getElementById("y-diagram").innerHTML += "<p><svg height='100' width='200'><text x='95%' y='50' >"+y+"</text><circle cx='50%' cy='50%' r='40' stroke='black' stroke-width='3' fill='white' /><text x='50%'' y='50%'' text-anchor='middle' stroke-width='2px' dy='.3em'>Y</text></svg></p>"
+        }
+        function cleanC() {
+            document.getElementById("x-diagram").innerHTML = " "
+            document.getElementById("z-diagram").innerHTML = " "
+            document.getElementById("y-diagram").innerHTML = " "
+        }
+    </script>
+    <style>
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="services" class="section-bg">
+        <div class="col-lg-12">
+            <div class="box">
+                
+                <h4 class="title">BPNN Calculator (ISP560)</h4>
+                <p class="description">
+                <div id="btn">
+                    <button onclick="addx()">Add X</button>
+                    <button onclick="addz()">Add Z</button>
+                    <button onclick="addy()">Add Y</button>
+                    <button onclick="cleanC()">Clear</button>
+                </div>
+                <div id="nodes">
+                    <div class="row">
+                        <div class="column" id="x-diagram"></div>
+                        <div class="column" id="z-diagram"></div>
+                        <div class="column" id="y-diagram"></div>
+                    </div>
+                </div>
+                </p>
+            </div>
+    </section>
+</body>
+
+</html>
