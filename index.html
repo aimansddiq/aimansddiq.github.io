@@ -49,8 +49,10 @@
         <div class="social-links">
           <a href="https://twitter.com/AimanS_" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
           <a href="https://www.twitch.tv/qidds" target="_blank" class="instagram"><i class="fa fa-twitch"></i></a>
-          <a href="https://www.facebook.com/aimansiddiq/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/aimansiddiq/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/aimansiddiq/" target="_blank" class="facebook"><i
+              class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/aimansiddiq/" target="_blank" class="instagram"><i
+              class="fa fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -63,11 +65,12 @@
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Me</a></li>
-          <!--<li><a href="#services">Projects</a></li>-->          
+          <li><a href="#portfolio">Photos</a></li>
           <li class="drop-down"><a href="#projects">Projects</a>
-          <li><a href="#footer">Contact Me</a></li>
             <ul>
-              <li><a href="bpnn.html" onclick="window.alert('The project is still working in progress'); return false;">BPNN Calculator</a></li>
+              <li><a href="bpnn.html"
+                  onclick="window.alert('The project is still working in progress'); return false;">BPNN Calculator</a>
+              </li>
               <!--<li class="drop-down"><a href="#">Drop Down 2</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -82,7 +85,9 @@
               <li><a href="#">Drop Down 5</a></li>-->
             </ul>
           </li>          
+          <li><a href="#footer">Contact Me</a></li>
         </ul>
+
       </nav><!-- .main-nav -->
     </div>
   </header><!-- #header -->
@@ -117,7 +122,7 @@
         <div class="row">
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="img/undraw_education_f8ru.svg" alt="">
+              <img src="img/me.jpeg" alt="">
             </div>
           </div>
           <div class="col-lg-7 col-md-6">
@@ -126,7 +131,7 @@
               <h3>The only reason I developed this page is to compile my projects</h3>
               <p>Hello, my name is Aiman Siddiq, I'm a fan of computer. <br>I studied Computer Science during my diploma
                 and
-                Artificial Intelligence for my degree.</p>
+                Intelligent Systems Engineering for my degree.</p>
               <p>I live in Puchong, I play games, and I do not even have any achievements so thank you for visiting and
                 do contact me if some of my works has bugs.</p>
               <a href="#projects" class="btn-wtv scrollto">Projects</a>
@@ -135,7 +140,159 @@
         </div>
       </div>
     </section><!-- #about -->
-<br>
+    <br>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Photos</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">App 1</a></h4>
+            <p>App</p>
+            <div>
+              <a href="img/portfolio/app1.jpg" data-gall="portfolioGallery" title="App 1" class="link-preview venobox"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">Web 3</a></h4>
+            <p>Web</p>
+            <div>
+              <a href="img/portfolio/web3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Web 3"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">App 2</a></h4>
+            <p>App</p>
+            <div>
+              <a href="img/portfolio/app2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="App 2"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">Card 2</a></h4>
+            <p>Card</p>
+            <div>
+              <a href="img/portfolio/card2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Card 2"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">Web 2</a></h4>
+            <p>Web</p>
+            <div>
+              <a href="img/portfolio/web2.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Web 2"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">App 3</a></h4>
+            <p>App</p>
+            <div>
+              <a href="img/portfolio/app3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="App 3"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">Card 1</a></h4>
+            <p>Card</p>
+            <div>
+              <a href="img/portfolio/card1.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Card 1"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">Card 3</a></h4>
+            <p>Card</p>
+            <div>
+              <a href="img/portfolio/card3.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Card 3"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4><a href="portfolio-details.html">Web 1</a></h4>
+            <p>Web</p>
+            <div>
+              <a href="img/portfolio/web1.jpg" class="link-preview venobox" data-gall="portfolioGallery" title="Web 1"><i class="ion ion-eye"></i></a>
+              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
 
     <!--==========================
       Services Section
@@ -149,21 +306,41 @@
         </header>
 
         <div class="row">
+
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline"
                   style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="#" onclick="window.alert('The project is still working in progress'); return false;">BPNN Calculator (WIP) </a></h4>
+              <h4 class="title"><a href="#"
+                  onclick="window.alert('The project is still working in progress'); return false;">BPNN Calculator
+                  (WIP) </a></h4>
               <p class="description">A calculator that automatically solve the BPNN algorithm to help you answer BPNN
                 questions</p>
+              <p class="description"><a
+                href="https://github.com/aimansddiq/bpnn/raw/main/BPNN.py" download="https://github.com/aimansddiq/bpnn/raw/main/BPNN.py"><b><br>Source File (.py) </b><i class="fa fa-download"></i></a></p>
             </div>
           </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-paper-outline"
+                  style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="#"
+                  onclick="window.alert('The project is still working in progress'); return false;">NiceHash Mining CSV Analyzer</a></h4>
+              <p class="description">NiceHash provide their user with .csv of reports but not total of mined by a single rigs. This is my script
+                to quickly sum up the total of mined with given timeline
+              </p>
+              <p class="description"><a
+                href="https://github.com/aimansddiq/nshcsvtotalrig/raw/main/TotalMining.py" download="https://github.com/aimansddiq/nshcsvtotalrig/raw/main/TotalMining.py"><b><br>Source File (.py) </b><i class="fa fa-download"></i></a></p>
+            </div>
+          </div>
+
         </div>
 
       </div>
     </section><!-- #services -->
 
-  <!--==========================
+    <!--==========================
     Footer
   ============================-->
     <footer id="footer" class="section-bg">
@@ -188,11 +365,16 @@
                   </p>
                 </div>
                 <div class="social-links">
-                  <a href="https://twitter.com/AimanS_" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="https://www.twitch.tv/qidds" target="_blank" class="instagram"><i class="fa fa-twitch"></i></a>
-                  <a href="https://www.facebook.com/aimansiddiq/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/aimansiddiq/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                  <a href="https://github.com/aimansddiq" target="_blank" class="instagram"><i class="fa fa-github"></i></a>
+                  <a href="https://twitter.com/AimanS_" target="_blank" class="twitter"><i
+                      class="fa fa-twitter"></i></a>
+                  <a href="https://www.twitch.tv/qidds" target="_blank" class="instagram"><i
+                      class="fa fa-twitch"></i></a>
+                  <a href="https://www.facebook.com/aimansiddiq/" target="_blank" class="facebook"><i
+                      class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/aimansiddiq/" target="_blank" class="instagram"><i
+                      class="fa fa-instagram"></i></a>
+                  <a href="https://github.com/aimansddiq" target="_blank" class="instagram"><i
+                      class="fa fa-github"></i></a>
                 </div>
               </div>
             </div>
